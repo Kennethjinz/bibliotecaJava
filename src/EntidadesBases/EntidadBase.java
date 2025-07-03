@@ -2,7 +2,7 @@ package EntidadesBases;
 
 import java.time.LocalDate;
 
-public class EntidadBase {
+public abstract class EntidadBase {
     private String id;
     private LocalDate fechaRegistro;
 
@@ -19,4 +19,11 @@ public class EntidadBase {
         this.fechaRegistro = LocalDate.now();
         return fechaRegistro.toString();
     }
+
+    public EntidadBase(String id, LocalDate fechaRegistro) {
+        this.id = id;
+        this.fechaRegistro = fechaRegistro;
+    }
+    
+    
 }
