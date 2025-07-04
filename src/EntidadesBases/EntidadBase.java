@@ -2,7 +2,7 @@ package EntidadesBases;
 
 import java.time.LocalDate;
 
-public class EntidadBase {
+public class  EntidadBase {
     private String id;
     private LocalDate fechaRegistro;
 
